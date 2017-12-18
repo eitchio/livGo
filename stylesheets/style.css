@@ -1,0 +1,288 @@
+body, html {
+  font-family: 'Fredoka One', cursive;
+  height: 100%;
+  padding-bottom: 15px;
+}
+.header {
+  
+  background-image: url("/images/angelwings.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-text {
+  position: absolute;
+  top: 50px;
+  color:whitesmoke;
+  text-align: center;
+  width: 100%;
+}
+.disabled:hover{
+  color:#39cccc !important;
+}
+@media only screen and (min-width: 576px) {
+  .border-tb {
+    border-top-style: solid;
+    border-top-color:#39CCCC;
+    border-top-width: thick;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-bottom-color:#39CCCC;
+  }
+
+  .border-left{
+    border-left-color:#39CCCC;
+    border-left-style: solid;
+    border-left-width: thick;
+    }
+
+    .border-right{
+      border-right-color: #39CCCC;
+      border-right-style: solid;
+      border-right-width: thick;
+      }
+    .coming-soon{
+      display: none;
+    }  
+}
+@media only screen and (max-width: 575px) {
+  .border-right {
+    display: none;
+  }
+}  
+#index{
+  font-size: 16pt;
+  }
+.interest:hover, interest:focus{
+  color:#ffc600;
+  cursor: pointer;
+}
+
+.reset:hover {
+  color:#39CCCC;
+  cursor: pointer;
+}  
+#butcol{
+  outline-color: #ffc600;
+}
+#map {
+  align-self: right;
+  height: 85vh;
+ }
+.map {
+  height: 100vh;
+  margin-top: 25px;
+}
+.beatles-img {
+  background-attachment: fixed;
+  background-image: url("/images/beatles-sml.jpg");
+  background-position: 50% 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.football-img {
+  background-attachment: fixed;
+  background-image: url("https://source.unsplash.com/MOnU_o4DMQw");
+  background-position: 50% 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.museums {
+  
+  margin-top: 25px;
+}
+.cathedral-img {
+  background-attachment: fixed;
+  background-image: url("https://source.unsplash.com/iEEQkhHlZWs");
+  background-position: 50% 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.albertdock-img {
+  background-attachment: fixed;
+  background-image: url("/images/albertdock-sml.jpg");
+  background-position: 50% 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.sefton-img {
+  background-attachment: fixed;
+  background-image: url("https://source.unsplash.com/qg9D9DZr75U");
+  background-position: 50% 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.architecture {
+  margin-top: 25px;
+}
+.livgo{
+  font-size: 1.65rem;
+  padding-top: 8px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.subh{
+  margin-top: 0;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  } 
+.navbar ul{
+text-align: center;
+}
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  
+}
+.navbar-brand{
+  padding: 0;
+  height: 65px;
+  line-height: 24px;
+}
+ #yellow-nav:hover{
+  color:#ffc600;
+}
+
+.leaflet-shadow-pane{
+  display: none;
+}
+
+
+.break {
+  height: 10px;
+}
+
+ /* The Overlay (background) */
+ .overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(255,255,255); /* White fallback color */
+  background-color: rgba(255,255,255, 0.9); /* White w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  }
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 20%; /* 25% from the top */
+  
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 5px;
+  margin: 3px;
+  text-decoration: none;
+  font-size: 24px;
+  color: whitesmoke;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.pill{
+  background-color: black;
+}
+
+.search-form{
+  position: relative;
+  left: -20%;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #ffc600;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color:grey;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      color: gray;
+  }
+} 
+
+.suggestions li {
+  list-style: none;
+  border-bottom: 1px solid #D8D8D8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin:0;
+  padding:20px;
+  transition:background 0.2s;
+  display:flex;
+  justify-content:space-between;
+  text-transform: capitalize;
+}
+
+.name{
+  color: black;
+}
+input {
+  width: 100%;
+  padding:20px;
+}
+
+.search-form {
+  max-width:400px;
+  margin:50px auto;
+}
+
+input.search {
+  margin: 0;
+  text-align: center;
+  outline:0;
+  border: 10px solid #F7F7F7;
+  width: 120%;
+  left: -10%;
+  position: relative;
+  top: 10px;
+  z-index: 2;
+  border-radius: 5px;
+  font-size: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+.suggestions {
+  margin: 0;
+  padding: 0;
+  position: relative;
+ }
+ .hl {
+  background:#ffc600;
+}

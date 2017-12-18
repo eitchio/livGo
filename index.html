@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90571480-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-90571480-3');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The UnOfficial Guide to Liverpool</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+    integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+    crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <script src="https://use.fontawesome.com/3a1baa9d04.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+    integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+    crossorigin=""></script>
+</head>
+<body>
+  <div class="container-fluid header">
+
+  </div>
+  <div class="main-text">
+    <div class="col-sm-12 text-center">
+      <h1>The UnOfficial Guide To Liverpool</h1>
+    </div>
+  </div>
+  <!-- The overlay -->
+  <div id="myNav" class="overlay">
+      
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <div class="row">
+          <div class="col-sm-4">
+            <ul class="nav nav-pills nav-stacked">
+              <li><a class="pill" href="#beatles" onclick="closeNav()">Beatles</a></li>
+              <li><a class="pill" href="#football" onclick="closeNav()">Football</a></li>
+              <li><a class="pill" href="#museums" onclick="closeNav()">Museums and Galleries</a></li>
+              <li><a class="pill" href="#mapdiv" onclick="closeNav()">Shopping and Restaurants</a></li>
+              <li><a class="pill" href="#buildings" onclick="closeNav()">Architecture</a></li>
+              <li><a class="pill" href="#parks" onclick="closeNav()">Parks</a></li>
+              <li><a class="pill" href="#mapdiv" onclick="closeNav()">Family</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-8">
+              <form class="search-form">
+                  <input type="text" class="search" placeholder="Search">
+                  <ul class="suggestions">
+                                     
+                  </ul>
+                </form>
+          </div> 
+      </div>
+    </div>
+  </div>
+
+
+  <div id="mapdiv" class="container-fluid map">
+      <div class="row">
+        <div id="index" class="col-sm-3">
+            <h3>Click on the items below to explore the map</h3><br>
+            <p class="interest" data-cat="beatle">The Beatles</p>
+            <p class="interest" data-cat="football">Football</p>
+            <p class="interest" data-cat="museum">Museums and Galleries</p>
+            <p class="interest" data-cat="shopping">Shopping and Restaurants</p>
+            <p class="interest" data-cat="buildings">Architecture</p>
+            <p class="interest" data-cat="parks">Parks</p>
+            <p class="interest" data-cat="family">Family</p>
+            <p id="all" class="reset" >Show all</p>    
+        </div>  
+        <div id="map" class="col-sm-9"></div>
+      </div>
+    </div>
+<div class="container-fluid beatles-img">
+</div>
+<div id="beatles" class="container-fluid beatle-info">
+  <h1>The Beatles</h1>
+  <p>Some text..</p>
+  <div class="break"></div>
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="break"></div>
+</div>
+<div class="container-fluid football-img">
+</div>
+<div id="football" class="container-fluid football">
+  <h1>Football</h1>
+  <p>Some text..</p>
+  <div class="break"></div>
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="break"></div>
+</div>
+<div class="container-fluid cathedral-img">
+</div>
+<div id="museums" class="container-fluid museums">
+  <h1>Museums and Galleries</h1>
+  <p>Some text..</p>
+  <div class="break"></div>
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="break"></div>
+</div>
+<div class="container-fluid albertdock-img">
+</div>
+  <div id="buildings" class="container-fluid architecture">
+      <h1>Architecture</h1>
+      <p>Some text..</p>
+      <div class="break"></div>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="break"></div>  
+  </div> 
+  <div class="container-fluid sefton-img">
+  </div>
+    <div id="parks" class="container-fluid parks">
+        <h1>Parks</h1>
+        <p>Some text..</p>
+        <div class="break"></div>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="break"></div>  
+    </div>           
+<div class="row">
+<nav class="navbar navbar-expand-sm fixed-bottom navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><p class="livgo">LiverpoolGo</p><p class="subh">The UnOfficial Guide</p></a>
+    <button id="butcol" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="yellow-nav" class="nav-link" href="#mapdiv"><i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                  <br>Map</a>
+              </li>
+              
+              <li  class="nav-item border-tb border-left">
+                <a class="nav-link disabled" href="javascript:void(0)"><i class="fa fa-bed" aria-hidden="true"></i>
+                  <br>Sleep<span class="coming-soon"> : Coming Soon</span></a>
+              </li>
+              <li class="nav-item border-tb">
+                <a class="nav-link disabled" href="javascript:void(0)"><i class="fa fa-cutlery" aria-hidden="true"></i>
+                  <br>Eat<span class="coming-soon"> : Coming Soon</span></a>
+              </li>
+              <li class="nav-item border-tb border-right">
+                  <a  class="nav-link disabled" href="javascript:void(0)">Coming<br>Soon</a>
+              </li>
+            
+              <li class="nav-item">
+                    <a id="yellow-nav" href="javascript:void(0)" class="nav-link" onclick="openNav()"><i class="fa fa-question" aria-hidden="true">
+                      </i><br>Search</a>
+              </li>
+            </ul>
+          </div>
+</nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="/javascripts/map.js"></script>
+    <script src="/javascripts/main.js"></script>
+      
+  </body>
+</html>
