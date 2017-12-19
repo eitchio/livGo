@@ -19,6 +19,7 @@
     integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
     crossorigin=""/>
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://use.fontawesome.com/3a1baa9d04.js"></script>
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
     integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
@@ -69,7 +70,8 @@
   <div id="mapdiv" class="container-fluid map">
       <div class="row">
         <div id="index" class="col-sm-3">
-            <h3>Click on the items below to explore the map</h3><br>
+            <h3>Click on the items below to explore the map</h3>
+            <p class="instruction">(You can click on the location icon for more information about it.</p>
             <p class="interest" data-cat="beatle">The Beatles</p>
             <p class="interest" data-cat="football">Football</p>
             <p class="interest" data-cat="museum">Museums and Galleries</p>
@@ -82,8 +84,10 @@
         <div id="map" class="col-sm-9"></div>
       </div>
     </div>
+    
 <div class="container-fluid beatles-img">
 </div>
+<div class="break"></div>
 <div id="beatles" class="container-fluid beatle-info">
   <h1>The Beatles</h1>
   <p>Liverpool is where it all started for The Fab Four and there is lots to be seen for any Beatles fan, so keep your camera close. 
@@ -125,6 +129,7 @@
 </div>
 <div class="container-fluid football-img">
 </div>
+<div class="break"></div>
 <div id="football" class="container-fluid football">
   <h1>Football</h1>
   <p>Few cities have the privilege of being home to two Premier League teams. Liverpool is firmly divided along Red and Blue lines. 
@@ -241,6 +246,7 @@
   </div> 
   <div class="container-fluid sefton-img">
   </div>
+  <div class="break"></div>
     <div id="parks" class="container-fluid parks">
         <h1>Parks and Gardens</h1>
         <p>Liverpool has an abundance of beautiful parks. Birkenhead Park on the Wirral is widely regarded as the model for Central Park in New York and the first publicly funded civic park in the world. Calderstones Park is 
@@ -263,7 +269,7 @@
             <img class="card-img-top" src="/images/speke-hall.jpg" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Speke Hall</h4>
-              <p class="card-text">Speke Hall is a Tudor manor house on which constructed started in 1530. The gardens have acres of woodlands and a hedge maze to explore. </p>
+              <p class="card-text">Speke Hall is a Tudor manor house on which construction started in 1530. The gardens have acres of woodlands and a hedge maze to explore. </p>
             </div>
            
           </div>
@@ -276,11 +282,11 @@
             
           </div>
         </div>
-        <div class="break"></div>  
+        <div class="final-break"></div>  
     </div>           
 <div class="row">
 <nav class="navbar navbar-expand-sm fixed-bottom navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><p class="livgo">LiverpoolGo</p><p class="subh">The UnOfficial Guide</p></a>
+    <a class="navbar-brand" href="#"><span class="livgo">LiverpoolGo</span><br><span class="subh">The UnOfficial Guide</span></a>
     <button id="butcol" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -307,8 +313,13 @@
                     <a id="yellow-nav" href="javascript:void(0)" class="nav-link" onclick="openNav()"><i class="fa fa-question" aria-hidden="true">
                       </i><br>Search</a>
               </li>
+              <li class="nav-item">
+                  <a  class="nav-link active" href="https://instagram.com/_liverpoolgo" target="_blank"><i id="yellow-nav" class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+              </li>
             </ul>
           </div>
+        
 </nav>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
