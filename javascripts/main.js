@@ -1,3 +1,19 @@
+//cookie consent
+window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000000",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#ffc600",
+          "text": "#000000"
+        }
+      },
+      "theme": "edgeless",
+      "position": "top"
+    })});
 
 //smooth scrolling effect
 $( 'body' ).on( 'click','.interest', function() {
